@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="timetable-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Time-Table</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>My Time Table</li>
+                <li><a href="index.html">Portfolio</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <main>
+        <form method="post" class="add-col">
+            <input placeholder="Time" />
+            <input type="submit"/>
+            <button type="button" onclick="showColForm()">Close</button>
+        </form>
+        <form method="post" class="add-row">
+            <input placeholder="Day" />
+            <input type="submit"/>
+            <button type="button" onclick="showRowForm()">Close</button>
+        </form>
+        <form method="post" class="add-value">
+            <select id="day-select">
+            </select>
+            <select id="time-select">
+            </select>
+            <input placeholder="value" />
+            <input type="submit" />
+            <button type="button" onclick="showValForm()">Close</button>
+        </form>
+        <button onclick='showColForm()'>Add Column</button>
+        <button onclick='showRowForm()'>Add Row</button>
+        <button onclick='showValForm()'>Add Agenda</button>
+        <table border="2" id="timetable" class="timetable">
+            <thead>
+                <tr id="header">
+                    <th>Day/Time</th>
+                </tr>
+            </thead>
+            <tbody id="data">
+              <!-- <td>
+                <tr></tr>
+              </td> -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-text">
+           <p>Copyright &copy; 2023 by Zeeshan Ali | All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="script1.js"> </script>
+</html>

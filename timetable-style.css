@@ -1,0 +1,187 @@
+:root{
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #3c9ca8;;
+    --text-color: black;
+}
+
+body{
+    background-size: 100% 100%;
+    margin: 0px;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+    background-color:var(--secondary-bg-color);
+}
+
+header a{
+text-decoration: none;
+color: var(--text-color);
+}
+
+header a:hover{
+    justify-content: space-between;
+    color: var(--primary-bg-color);
+    text-decoration: underline;
+}
+
+header li{
+    display: inline-block;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+.footer{
+    padding: 2rem 9%;
+    background: #3c9ca8;
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+    font-size: 1.6rem;
+}
+
+.footer-text p{
+    text-align: left;
+    color: var(--primary-bg-color);
+}
+
+
+.add-row{
+    display: none;
+    z-index:10;
+    position: fixed;
+    top:40%;
+    right:20%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 20px;
+}
+
+.add-col{
+    display: none;
+    z-index:10;
+    position: fixed;
+    top:40%;
+    right:20%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 20px;
+}
+
+.add-value{
+    display: none;
+    z-index:10;
+    position: fixed;
+    top:40%;
+    right:20%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: inherit;
+    background-color: var(); /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #a9c9c6;
+  }
+    
+  input[type=submit]:hover {
+    background-color:var(--secondary-bg-color);
+    color: white;
+  }
+
+
+button {
+    background-color: #a9c9c6; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid var(--secondary-bg-color);
+}
+  
+button:hover {
+  background-color: var(--secondary-bg-color);
+  color: white;
+}
+
+.timetable {
+    border-collapse: collapse;
+    margin: 80px 600px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 500px;
+    box-shadow: 0 0 20px var(--primary-bg-color);
+}
+
+.timetable thead tr {
+    background-color: var(--secondary-bg-color);
+    color: #ffffff;
+    text-align: left;
+}
+
+.timetable th,
+.timetable td {
+    padding: 12px 15px;
+}
+
+.timetable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.timetable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.timetable tbody tr:last-of-type {
+    border-bottom: 2px solid var(--secondary-bg-color);
+}
+
+.timetable tbody tr.active-row {
+    font-weight: bold;
+    color: var(--secondary-bg-color);
+}
+

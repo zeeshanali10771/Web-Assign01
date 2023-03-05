@@ -1,0 +1,4 @@
+Face Book = "https://facebook.com/ranazeeshan.ali.5815?mibextid=ZbWKwL"
+Instagram ="https://instagram.com/zeeshan10771?igshid=ZDdkNTZiNTM="
+linkedin = "https://linkedin.com/in/zeeshanali10771/"
+Git-hub ="https://github.com/zeeshanali420"
